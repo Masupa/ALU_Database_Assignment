@@ -13,5 +13,38 @@ The African Leadership University has been using file systems to manage the stud
 
 ## Implementation
 
+### Identified entities
+The following are the entities identified that will form African Leadership University’s database system:
+
+  - Address
+  - Student
+  - Course
+  - Club
+  - Degree
+  - Department
+  - Facilitator
+  - Grade
+  - Staff
+
+### Relationship Schema
+The following is a relationship schema outlining the attributes per entities and relationships between the different entities:
+
+
+| Entity       | Attributes                                                                                         |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| Student      | Student ID, First Name, Last Name, Email, Birthdate, Gender, Courses ID@, Club ID@                 |
+| Courses      | Course ID, Course Name, Course Year, Course Term, Department ID@, Degree ID@                       |
+| Facilitator  | Facilitator ID, First Name, Last Name, Gender, Birthdate, Courses ID@, Department ID@, Staff ID@   |
+| Department   | Department ID, Department Name, Number of Faculty                                                  |
+| Clubs        | Club ID, Club Name, Number of Members, Facilitator ID@, Department ID@                             |
+| Staff        | Staff ID, First Name, Last Name, Staff Position                                                    |
+| Grade Report | Grade ID, GPA, Standing, Course ID@, Student ID@                                                   |
+| Address      | Address ID, Country, City, Street No, House No, Admin ID@, Staff ID@, Student ID@                  |
+| Degree       | Degree ID, Degree Name, Duration, Dept ID@                                                         |
+
+
+
+
+
 ### ER Diagram - Logical Model
 ![alt text](https://github.com/Masupa/ALU_Database_Assignment/blob/main/ER_Diagram.jpeg)
